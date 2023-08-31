@@ -42,6 +42,20 @@
     "TemplateDisplayName": "Button",
     "Version": "1.5.2"
   },
+  "circle": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/shapes/circle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "circle",
+    "OverridableProperties": {},
+    "Version": "2.3.0"
+  },
   "gallery": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -97,7 +111,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "hostControl",
     "OverridableProperties": {},
-    "Version": "1.5.4"
+    "Version": "1.6.0"
   },
   "htmlViewer": {
     "CustomGroupControlTemplateName": "",
@@ -170,6 +184,71 @@
     "TemplateDisplayName": "Label",
     "Version": "1.6.0"
   },
+  "PCF_3DViewer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/ViewIn3D",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "ViewIn3D",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "PCF_3DViewer",
+    "Version": "1.2.22"
+  },
+  "PCF_ArButton": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/ViewInMR",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "ViewInMR",
+    "OverridableProperties": {
+      "Photos": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "FileSize",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Image",
+              "Name": "ImageURI",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "MimeType",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      }
+    },
+    "PCFDynamicSchemaForIRRetrieval": {
+      "Photos": {
+        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"ImageURI\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\"},\"MimeType\":{\"type\":\"string\"},\"FileSize\":{\"type\":\"number\"}}}}",
+        "PCFSkipValidation": false
+      }
+    },
+    "TemplateDisplayName": "PCF_ArButton",
+    "Version": "1.0.29"
+  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -211,70 +290,5 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
-  },
-  "View in 3D (preview)": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/ViewIn3D",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "ViewIn3D",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "View in 3D (preview)",
-    "Version": "1.2.22"
-  },
-  "View in MR (preview)": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/ViewInMR",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "ViewInMR",
-    "OverridableProperties": {
-      "Photos": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": [
-            {
-              "EnumString": "",
-              "Kind": "Number",
-              "Name": "FileSize",
-              "Type": []
-            },
-            {
-              "EnumString": "",
-              "Kind": "Image",
-              "Name": "ImageURI",
-              "Type": []
-            },
-            {
-              "EnumString": "",
-              "Kind": "String",
-              "Name": "MimeType",
-              "Type": []
-            }
-          ]
-        },
-        "Version": "1.332"
-      }
-    },
-    "PCFDynamicSchemaForIRRetrieval": {
-      "Photos": {
-        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"ImageURI\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\"},\"MimeType\":{\"type\":\"string\"},\"FileSize\":{\"type\":\"number\"}}}}",
-        "PCFSkipValidation": false
-      }
-    },
-    "TemplateDisplayName": "View in MR (preview)",
-    "Version": "1.0.29"
   }
 }
