@@ -85,3 +85,17 @@
         Y: =Parent.Height - Self.Height
         ZIndex: =6
 
+    Button2 As button:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =70
+        HoverBorderColor: =RGBA(166, 166, 166, 1)
+        HoverFill: =Color.Gray
+        OnSelect: =Navigate('Overview Screen', ScreenTransition.Fade)
+        PressedColor: =Color.Gray
+        Size: =24
+        Text: ="GO BACK!"
+        Width: =280
+        X: =185
+        Y: =580
+        ZIndex: =7
+
