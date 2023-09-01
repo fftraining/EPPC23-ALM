@@ -69,7 +69,7 @@
         Height: =70
         HoverFill: |-
             =ColorValue("#FA7E01")
-        OnSelect: =Navigate('Tutorial Screen', ScreenTransition.Fade
+        OnSelect: =Navigate('Tutorial Screen', ScreenTransition.Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
